@@ -1,0 +1,18 @@
+<section class="modulo p-3 rounded mt-4">
+<section class="w-100 p-2 ">
+  <div class="p-3 d-flex justify-content-center">
+    <h2 class="text-align-center font-weight-bold p-3 rounded text-white">Aplicacion Calculadora</h2>
+  </div>
+</section>
+<section class="d-flex justify-content-center w-100">
+  <div class="w-100 p-3 rounded" action="index.html" method="post">
+    <app-formulario
+    (resultadoOperacion)="onResultado($event)"
+    ></app-formulario>
+    <br/>
+    <app-resultado
+    [resultado] = "resultado"
+    ></app-resultado>
+  </div>
+</section>
+</section>

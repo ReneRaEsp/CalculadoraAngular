@@ -1,0 +1,17 @@
+<div class="form-group">
+   <label class="font-weight-bold text-white-50" for="OPA">Operando A: </label>
+     <input class="form-control" type="number" name="OPA" [(ngModel)]="operandoA" placeholder="Escribe operando A">
+ </div>
+   <br/>
+   <br/>
+ <div class="form-group">
+   <label class="font-weight-bold text-white-50" for="OPB">Operando B: </label>
+     <input class="form-control" type="number" name="OPB" [(ngModel)]="operandoB" placeholder="Escribe operando B">
+ </div>
+ <br/>
+ <div class="d-flex justify-content-around">  
+   <button (click)="onSumar()" name="button" class="btn btn-light float-right">Sumar</button>
+   <button (click)="onRestar()" name="button" class="btn btn-light float-right">Restar</button>
+   <button (click)="onMultiplicar()" name="button" class="btn btn-light float-right">Multiplicar</button>
+   <button (click)="onDivision()" name="button" class="btn btn-light float-right">División</button>
+ </div>
